@@ -1,0 +1,105 @@
+1 
+X=int(input("введiть вiк Тетянки:\n"))
+Y=int(input("введiть вiк Мiтi:\n"))
+С=0
+C=(X+Y)/2
+print(f"середнiй вiк= {C}\nВiк Тетянки вiд среднього вiдрiзняється на {abs(C-X)}рокiв\nВiк Мiтi вiд среднього вiдрiзняється на {abs(C-Y)} рокiв")
+
+2 
+n=int(input('enter number'))
+a=n//10
+b=n%10
+if a>b: print('Перше бiльше')
+if a<b: print('друге бiльше')
+if a==b: print('Вони одинаковi')
+
+Номер 3(а) 
+i=0
+for a in range(100,501):
+    i=i+a
+    print(i)
+    
+3(б) 
+i=int(input())
+for a in range(i,501):
+    i=i+a
+    print(i)
+
+
+3(в) 
+b=int(input())
+for a in range(-10,b):
+    b=b+a
+    print(b)
+
+3(г) 
+a=int(input())
+b=int(input())
+for a in range(a,b):
+    b=b+a
+    print(b)
+
+4(while) 
+n=int(input('enter number'))
+k=1
+while k<=9:
+    print(n*k)
+    k=k+1
+4(for) 
+n=int(input('enter number'))
+k=1
+for elem in range(1,10):
+    print(n*k)
+    k=k+1
+
+5 
+A = int(input("Введіть значення A: "))
+B = int(input("Введіть значення B : "))
+
+if A >= B:
+    print(" введіть значення B більше за A.")
+else:
+    product = 1  
+    for number in range(A, B + 1):
+        if number % 2 == 0 and number % 3 == 0:
+            product *= number
+
+    print(f"Добуток чисел від {A} до {B}, які діляться на 2 і 3 без залишку: {product}
+
+
+6 
+N = int(input("Введіть ціле число N (> 0): "))if N <= 0:
+    print("Будь ласка, введіть ціле число більше за 0.")
+else:
+    contains_digit_2 = False  
+
+        while N > 0:
+        digit = N % 10          if digit == 2:
+            contains_digit_2 = True
+            break  
+        N = N // 10
+        print(f"Число {N} містить цифру '2': {contains_digit_2}")   
+
+7 
+n=10
+k=1
+while k<=9:
+    print(n*k)
+    k=k+1
+
+8 
+n=int(input('enter number'))
+while 0<n:
+    b=n%10
+    n=n//10
+    if b//2==1 and b%2==0:
+      print('true')
+   n=0
+    else:
+      print('false')
+    
+
+
+
+
+
